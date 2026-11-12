@@ -39,13 +39,9 @@ polynomial-solver-asic/
 │   ├── polynomial_cfg.vhd
 │   ├── polynomial_top.vhd
 │   └── README.md
-├── testbench/
-│   └── README.md
-├── assets/
-│   └── screenshots/
-│       └── README.md
-└── reports/
-    └── README.md
+└── assets/
+    └── screenshots/
+        └── README.md
 ```
 
 ## Screenshots:
