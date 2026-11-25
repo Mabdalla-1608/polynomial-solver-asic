@@ -73,6 +73,7 @@ The RTL simulation steps `x` from 0 to 10. Every output matches `2x³ + 9x² + 4
 | y | 10 | 25 | 70 | 157 | 298 | 505 | 790 | 1165 | 1642 | 2233 | 2950 |
 
 ![ModelSim functional simulation](assets/screenshots/modelsim-functional-simulation.png)
+
 *ModelSim waveform: `x_tb` steps through 0–10 and `y_tb` shows the matching results.*
 
 ### Timing (Cadence Innovus)
@@ -90,23 +91,29 @@ No max-capacitance, max-transition, max-fanout or max-length violations at any s
 ### Layout and physical verification
 
 ![Layout with clean Assura DRC](assets/screenshots/layout-assura-drc-clean.png)
+
 *Final layout with the pad ring: Assura DRC clean.*
 
 ![Layout with clean Assura LVS](assets/screenshots/layout-assura-lvs-clean.png)
+
 *Assura LVS: layout matches the schematic.*
 
 ![Schematic](assets/screenshots/schematic.png)
+
 *Schematic view imported into Virtuoso.*
 
 ### Transistor-level simulation (Virtuoso)
 
 ![Testbench schematic](assets/screenshots/testbench-schematic.png)
+
 *Testbench driving the chip's pads.*
 
 ![Transient simulation](assets/screenshots/functional-simulation-2.png)
+
 *Transient simulation with inputs 2, 3, 1, 0 giving outputs 70, 157, 25, 10.*
 
 ![Parametric sweep to find the maximum frequency](assets/screenshots/virtuoso-simulation.png)
+
 *Parametric sweep of the clock period. The shortest period that still gave a valid output was 0.777 ns, so the maximum clock frequency is about 1.29 GHz.*
 
 The post-layout (SPEF-annotated) comparison was not completed, so the frequency above is from the schematic-level simulation.
